@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Workflow Templates | 9 Production-Ready Templates for $997</title>
+    <meta name="description" content="Stop manual work. Deploy AI agents that find leads, write content, qualify prospects, and handle support 24/7. 9 templates ready to use today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border: #2a2a3a;
+            --text: #ffffff;
+            --text-muted: #8a8a9a;
+            --accent: #6366f1;
+            --accent-hover: #818cf8;
+            --green: #10b981;
+            --orange: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .price-old {
+            font-size: 24px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        .price-new {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--green);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 18px 48px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: 0 4px 24px rgba(99, 102, 241, 0.3);
+        }
+
+        .cta-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
+        }
+
+        .cta-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 12px;
+        }
+
+        /* Templates Grid */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .template-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.2s;
+        }
+
+        .template-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .template-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .template-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .template-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .template-meta {
+            display: flex;
+            gap: 24px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .template-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Pricing Box */
+        .pricing-box {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #1a1a2e 100%);
+            border: 1px solid var(--accent);
+            border-radius: 24px;
+            padding: 48px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .pricing-box h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .pricing-box .price {
+            font-size: 64px;
+            font-weight: 800;
+            color: var(--green);
+            margin: 24px 0;
+        }
+
+        .pricing-box ul {
+            text-align: left;
+            max-width: 400px;
+            margin: 24px auto;
+            list-style: none;
+        }
+
+        .pricing-box li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pricing-box li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .testimonial-info h4 {
+            font-weight: 600;
+        }
+
+        .testimonial-info p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+            font-style: normal;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 24px 0;
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 80px 0 60px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .templates-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-box {
+                padding: 32px 24px;
+            }
+
+            .pricing-box .price {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span class="badge">9 Production-Ready Templates</span>
+            <h1>AI Agent Workflows That Generate Leads 24/7</h1>
+            <p>Stop manually prospecting, writing content, and qualifying leads. Deploy AI agents that work around the clock — for any client, any industry.</p>
+
+            <div class="price">
+                <span class="price-old">$1,773</span>
+                <span class="price-new">$997</span>
+            </div>
+
+            <a href="#" class="cta-button">Get All 9 Templates</a>
+            <p class="cta-sub">One-time payment. Lifetime access. 30-day guarantee.</p>
+        </div>
+    </section>
+
+    <!-- Templates -->
+    <section class="section" style="background: #0f0f15;">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Inside</h2>
+                <p>9 battle-tested templates, ready to deploy in hours</p>
+            </div>
+
+            <div class="templates-grid">
+                <div class="template-card">
+                    <div class="template-icon">🔗</div>
+                    <h3>LinkedIn Outreach Agent</h3>
+                    <p>Find prospects, research their profile, generate personalized connection requests automatically. Book meetings while you sleep.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 2-4 hrs setup</span>
+                        <span>💰 $2-5K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">📧</div>
+                    <h3>Cold Email Research Pipeline</h3>
+                    <p>Research prospects, gather company intel, generate personalized cold emails with subject lines. 35%+ open rates.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 1-3 hrs setup</span>
+                        <span>💰 $1-3K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">🎯</div>
+                    <h3>Multi-Channel Lead Qualifier</h3>
+                    <p>Score leads across email, LinkedIn, and web signals. Route hot leads to Slack instantly. Never miss a prospect.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 3-5 hrs setup</span>
+                        <span>💰 $3-8K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">📍</div>
+                    <h3>Local Business Lead Capture</h3>
+                    <p>Auto-reply to service inquiries, qualify urgency, alert the owner. For plumbers, HVAC, dentists, and more.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 1-2 hrs setup</span>
+                        <span>💰 $500-2K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">🎬</div>
+                    <h3>Content Repurposing Pipeline</h3>
+                    <p>Turn one YouTube video or podcast into 30 pieces: LinkedIn posts, Twitter threads, email newsletters, and more.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 3-4 hrs setup</span>
+                        <span>💰 $1-3K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">🎧</div>
+                    <h3>Support Triage Agent</h3>
+                    <p>Auto-classify tickets, draft responses, route complex issues to humans. Handle 70%+ of support without lifting a finger.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 3-4 hrs setup</span>
+                        <span>💰 $2-4K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">📊</div>
+                    <h3>SEO Audit & Content Brief Generator</h3>
+                    <p>Analyze keywords, audit competitors, generate full content briefs with structure, word counts, and SEO recommendations.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 3-5 hrs setup</span>
+                        <span>💰 $1-3K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">👥</div>
+                    <h3>Recruiting Sourcing Agent</h3>
+                    <p>Search LinkedIn and job boards, score candidates, generate personalized outreach messages. 10x your pipeline.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 3-4 hrs setup</span>
+                        <span>💰 $1.5-2.5K/client</span>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-icon">🛒</div>
+                    <h3>E-commerce Product Generator</h3>
+                    <p>Generate product descriptions for Shopify, Amazon, and social media. Bulk process 100+ products in minutes.</p>
+                    <div class="template-meta">
+                        <span>⏱️ 2-4 hrs setup</span>
+                        <span>💰 $1-2K/client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for Modern Workflows</h2>
+                <p>Everything you need to deploy AI agents fast</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>n8n Ready</h3>
+                    <p>Copy-paste workflow JSON directly into n8n. Free tier works.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Smart Prompts</h3>
+                    <p>Battle-tested prompts for GPT-4 and Claude. Just plug in your API key.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📐</div>
+                    <h3>Client Pricing</h3>
+                    <p>Each template includes setup fees, monthly pricing, and sales copy.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Success Metrics</h3>
+                    <p>Track open rates, conversion, and ROI with built-in benchmarks.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Integrations</h3>
+                    <p>Works with LinkedIn, HubSpot, Slack, Twilio, Airtable, and more.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Low Cost</h3>
+                    <p>API costs $20-100/month. 85%+ profit margins on every client.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section" style="background: #0f0f15;">
+        <div class="container">
+            <div class="testimonial">
+                <p>"Set up the LinkedIn outreach agent in 2 hours. Booked 8 meetings in the first month. These templates pay for themselves on the first client."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MK</div>
+                    <div class="testimonial-info">
+                        <h4>Marcus K.</h4>
+                        <p>Agency Owner, Austin TX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section">
+        <div class="container">
+            <div class="pricing-box">
+                <h2>Complete Bundle</h2>
+                <p>Everything you need to start selling AI agent services</p>
+
+                <div class="price">$997</div>
+
+                <ul>
+                    <li>All 9 templates with full documentation</li>
+                    <li>n8n workflow JSON files (copy-paste ready)</li>
+                    <li>All AI prompts (GPT-4 + Claude)</li>
+                    <li>Client pricing frameworks</li>
+                    <li>Sales page copy templates</li>
+                    <li>Sample outputs for each template</li>
+                    <li>Bonus: 50+ prompt variations</li>
+                    <li>30-day email support</li>
+                </ul>
+
+                <a href="#" class="cta-button">Get All 9 Templates — $997</a>
+                <p class="cta-sub">One-time payment. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: #0f0f15;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Do I need coding skills?</h3>
+                    <p>No. All templates work with n8n (free tier) or Make.com. Copy-paste setup, no code required.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How long does it take to deploy?</h3>
+                    <p>2-4 hours per template. You can have your first client live same day.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What AI models do these use?</h3>
+                    <p>GPT-4o or Claude. Costs $20-100/month depending on volume. You bring your own API key.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I use these for multiple clients?</h3>
+                    <p>Yes. The agency license ($1,497) lets you use templates for unlimited clients.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if I get stuck?</h3>
+                    <p>30-day email support included. We respond within 24 hours.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is there a refund policy?</h3>
+                    <p>Yes. 30-day money-back guarantee, no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 36px; margin-bottom: 16px;">Start Building AI Agent Services Today</h2>
+            <p style="color: var(--text-muted); margin-bottom: 32px; font-size: 18px;">The window is open. Competition is low. Demand is high.</p>
+
+            <div class="price" style="margin-bottom: 24px;">
+                <span class="price-old">$1,773</span>
+                <span class="price-new">$997</span>
+            </div>
+
+            <a href="#" class="cta-button">Get All 9 Templates Now</a>
+            <p class="cta-sub">Instant download. 30-day guarantee.</p>
+        </div>
+    </section>
+
+<!-- Gumroad Overlay -->
+<div class="gumroad-overlay" style="display: none;" id="purchase-overlay">
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 10000; display: flex; align-items: center; justify-content: center;">
+        <div style="background: #1a1a2e; padding: 40px; border-radius: 16px; max-width: 400px; text-align: center;">
+            <h3 style="margin-bottom: 16px; font-size: 24px;">Complete Bundle — $997</h3>
+            <p style="color: #8a8a9a; margin-bottom: 24px;">One-time payment. Lifetime access.</p>
+            <!-- Gumroad button placeholder -->
+            <a href="https:// Gumroad.com/l/your-template-id" class="cta-button" style="background: #ff5e62; display: block; text-align: center;">
+                Buy on Gumroad
+            </a>
+            <button onclick="document.getElementById('purchase-overlay').style.display='none'" style="background: none; border: none; color: #8a8a9a; margin-top: 16px; cursor: pointer;">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Connect Gumroad buttons
+    document.querySelectorAll('.cta-button[href="#"], .template-card').forEach(function(el) {
+        if (el.classList.contains('cta-button')) {
+            el.href = 'https:// Gumroad.com/l/your-template-id';
+        }
+    });
+</script>
+
+<!-- Footer -->
+<footer>
+        <div class="container">
+            <p>&copy; 2026 AI Agent Templates. All rights reserved.</p>
+            <p style="margin-top: 8px;">Built for operators who move fast.</p>
+        </div>
+    </footer>
+</body>
+</html>
